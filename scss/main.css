@@ -101,6 +101,10 @@ textarea {
   resize: none;
 }
 
+textarea:focus {
+  border: none;
+}
+
 @media (max-width: 960px) {
   #tape {
     display: none;

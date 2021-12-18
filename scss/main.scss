@@ -82,6 +82,9 @@ textarea {
   width: inherit;
   height: 82vmin;
   resize: none;
+  &:focus {
+    border: none;
+  }
 }
 
 @media (max-width: 960px) {
