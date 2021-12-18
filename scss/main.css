@@ -99,10 +99,7 @@ textarea {
   width: inherit;
   height: 82vmin;
   resize: none;
-}
-
-textarea:focus {
-  border: none;
+  outline: none;
 }
 
 @media (max-width: 960px) {
