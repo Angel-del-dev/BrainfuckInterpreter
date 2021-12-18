@@ -1,0 +1,135 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#screen {
+  height: inherit;
+  width: inherit;
+}
+
+#output {
+  position: absolute;
+  top: 90vmin;
+  background-color: #171717;
+  width: 100%;
+  height: 10vmin;
+  color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#output #response {
+  padding: 2vmin;
+  border-right: 1px solid white;
+  overflow: auto;
+}
+
+#output #response,
+#output #tape {
+  height: inherit;
+  width: inherit;
+  min-width: 50%;
+}
+
+#output #tape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+header {
+  width: inherit;
+  background-color: gray;
+  height: 5vmin;
+  padding: 1vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #fileName {
+  margin-left: 10vmin;
+}
+
+header #fileName #file_name {
+  font-weight: 200;
+  font-style: italic;
+  color: lightgray;
+}
+
+header #interpret {
+  margin-right: 10vmin;
+  background-color: #4caf50;
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+header #interpret:hover {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
+textarea {
+  width: inherit;
+  height: 82vmin;
+  resize: none;
+}
+
+@media (max-width: 960px) {
+  #tape {
+    display: none;
+  }
+  textarea {
+    width: inherit;
+    height: 150vmin;
+    resize: none;
+  }
+  #output {
+    position: absolute;
+    height: 20vmin;
+    top: 90%;
+  }
+  header {
+    padding: 5vmin;
+  }
+}
+
+@media (max-width: 1300px) {
+  textarea {
+    width: inherit;
+    height: 80vmin;
+    resize: none;
+  }
+  #output {
+    position: absolute;
+    height: 20vmin;
+    top: 90%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interpreter - Brainf*ck</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="textarea/jquery-linedtextarea.css" />
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="textarea/jquery-linedtextarea.js"></script>
+    <script src="js/brainfuck.js" defer></script>
+    <script src="generic.js"></script>
+  </head>
+  <body>
+    <div id="screen">
+      <header>
+        <span id="fileName">File: <span id="file_name">Hello_world.bf</span></span>
+        <button id="interpret">Run</button>
+      </header>
+      <textarea id="interpreter">
+++++++++[>+++++++++<-]>.
+>++++++++++[>++++++++++<-]>+.
+>++++++[>++++++++++++++++++<-]>.
+>++++++[>++++++++++++++++++<-]>.
+>++++++++++[>+++++++++++<-]>+.
+
+>++++[>++++++++<-]>.
+
+>++++++++++[>+++++++++++<-]>+++++++++.
+>++++++++++[>+++++++++++<-]>+.
+>++++++++++[>+++++++++++<-]>++++.
+>++++++[>++++++++++++++++++<-]>.
+>++++++++++[>++++++++++<-]>.
+>++++[>++++++++<-]>+.
+    </textarea
+      >
+      <div id="output">
+        <div id="response"></div>
+        <div id="tape" title="De momento solo se pueden utilizar 30 carácteres"></div>
+      </div>
+    </div>
+  </body>
+</html>
